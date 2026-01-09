@@ -1,0 +1,6 @@
+import { getAddress } from 'viem'
+
+export const REGISTRY_ADDRESS = getAddress('0x000000006551C19487814612e58fe06813775758')
+export const IMPLEMENTATION_ADDRESS = getAddress('0x2D2560255140758424985FCAD7BA4c424074CC92')
+export const AGENT_NFT_ADDRESS = getAddress('0x047bd4a35918f36f11812328fa755ad0ff606ef0') 
+export const SEPOLIA_ID = 11155111

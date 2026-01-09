@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define your custom AgentFi theme colors here */
+  --color-agent-blue: #3b82f6;
+  --color-agent-black: #000000;
+  
+  /* You can also extend other design tokens like fonts or spacing */
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
+    /* Ensuring a clean dark-mode base for the dashboard */
+    background-color: var(--color-agent-black);
+    color: white;
+  }
+}
+
+@layer components {
+  /* Custom utility for your Agent cards to avoid the transparency error */
+  .agent-card {
+    @apply bg-gray-900/50 border border-gray-800 backdrop-blur-sm rounded-3xl transition-all duration-300;
+  }
+}
